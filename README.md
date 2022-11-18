@@ -1,23 +1,23 @@
 # Project
 Project for business 
 
-# pip install tkinter
+# pip install matplotlib
 
-import tkinter as tk
+import matplotlib as mp
 
 import tkinter.messagebox
 
 from tkinter.constants import SUNKEN
  
 
-window = tk.Tk()
+window = mp.Tk()
 
 window.title('Calculator-GeeksForGeeks')
 
-frame = tk.Frame(master=window, bg="skyblue", padx=10)
+frame = tk.Frame(master=window, bg="Sky", padx=10)
 frame.pack()
 
-entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
+entry = mp.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
 
 entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
  
@@ -79,11 +79,11 @@ button_5 = tk.Button(master=frame, text='5', padx=15,
 
                      pady=5, width=3, command=lambda: myclick(5))
 
-button_5.grid(row=2, column=1, pady=2)
+button_5.grid(row=3, column=1, pady=2)
 
 button_6 = tk.Button(master=frame, text='6', padx=15,
 
-                     pady=5, width=3, command=lambda: myclick(6))
+                     pady=4, width=5, command=lambda: myclick(6))
 
 button_6.grid(row=2, column=2, pady=2)
 
